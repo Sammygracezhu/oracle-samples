@@ -126,7 +126,7 @@ public class ReservationBean implements Serializable {
 		email = "";
 		emailAgain = "";
 		date = "";
-		price = "120.00";
+		price = "120";
 		totalValue = "120.00";
 		tickets = "1";
 	}
