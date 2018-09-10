@@ -57,7 +57,7 @@
 				<br/>
 				<h:inputText id="tickets" value="#{reservationBean.tickets}">
 					<f:passThroughAttributes value="#{reservationBean.ticketAttrs}"/>
-					<f:ajax event="change" render="total" 
+					<f:ajax  render="total" 
 									listener="#{reservationBean.calculateTotal}"/>
 				</h:inputText>
 			</p>
