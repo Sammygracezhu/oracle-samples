@@ -22,6 +22,7 @@ public class JoinFlowBean implements Serializable {
     private static final long serialVersionUID = 1L;
     private boolean fanClub;
     private String[] newsletters;
+    public static boolean joinFlowTag;
     private static final SelectItem[] newsletterItems = {
         new SelectItem("Duke's Quarterly"),
         new SelectItem("Innovator's Almanac"),
@@ -31,9 +32,16 @@ public class JoinFlowBean implements Serializable {
 
     public JoinFlowBean() {
         this.newsletters = new String[0];
+        joinFlowTag = true;
     }
 
     public String getReturnValue() {
+        joinTag=false;
+        if(CheckoutFlowBean.checkoutTag == true){
+          CheckoutFlowBean.checkoutTag =false;
+          
+                 return "checkoutFlow";
+        }
         return "/exithome";
     }
 
