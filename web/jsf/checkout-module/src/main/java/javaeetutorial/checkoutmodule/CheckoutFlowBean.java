@@ -29,8 +29,13 @@ public class CheckoutFlowBean implements Serializable {
     private String ccName;
     private String ccNum;
     private String ccExpDate;
+    public static boolean checkoutTag;
 
     public String getReturnValue() {
+        checkoutTag = false;
+      if(JoinFlowBean.joinTag == true){
+        JoinFlowBean.joinTag = false;
+        return "joinFlow";
         return "/index";
     }
    
