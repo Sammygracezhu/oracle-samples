@@ -22,7 +22,7 @@ public class JoinFlowBean implements Serializable {
     private static final long serialVersionUID = 1L;
     private boolean fanClub;
     private String[] newsletters;
-    public static boolean joinFlowTag;
+    public static boolean joinTag;
     private static final SelectItem[] newsletterItems = {
         new SelectItem("Duke's Quarterly"),
         new SelectItem("Innovator's Almanac"),
