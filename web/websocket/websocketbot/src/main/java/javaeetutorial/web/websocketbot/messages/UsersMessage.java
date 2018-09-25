@@ -11,19 +11,19 @@ import java.util.List;
 
 /* Represents the list of users currently connected to the chat */
 public class UsersMessage extends Message {
-    private List<String> userlist;
+    private List<String> userList;
     
     public UsersMessage(List<String> userlist) {
-        this.userlist = userlist;
+        this.userList = userlist;
     }
     
     public List<String> getUserList() {
-        return userlist;
+        return userList;
     }
     
     /* For logging purposes */
     @Override
     public String toString() {
-        return "[UsersMessage] " + userlist.toString();
+        return "[UsersMessage] " + userList.toString();
     }
 }
