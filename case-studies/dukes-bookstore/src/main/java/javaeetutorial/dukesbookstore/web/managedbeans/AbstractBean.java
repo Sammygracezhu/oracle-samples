@@ -24,9 +24,7 @@ import javax.inject.Named;
 public class AbstractBean implements Serializable {
 
     private static final long serialVersionUID = -3375564172975657665L;
-    @Inject
-    ShoppingCart cart;
-
+   
     /**
      * <p>Return the <code>FacesContext</code> instance for the current request.
      */
